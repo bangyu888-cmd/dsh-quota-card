@@ -1,0 +1,65 @@
+{
+  "name": "dsh-quota-card",
+  "version": "0.3.0",
+  "description": "Sidebar quota card for DeepSeek Harness: ChatGPT, Gemini and Grok Bot usage plus the DeepSeek balance, with reset countdowns, thresholds and per-provider proxies.",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "THIRD-PARTY-NOTICES.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-connection"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "quota",
+    "usage",
+    "balance",
+    "chatgpt",
+    "gemini",
+    "grok",
+    "deepseek"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-0 <0.3.0-0",
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bangyu888-cmd/dsh-quota-card.git"
+  },
+  "homepage": "https://github.com/bangyu888-cmd/dsh-quota-card#readme",
+  "bugs": {
+    "url": "https://github.com/bangyu888-cmd/dsh-quota-card/issues"
+  },
+  "author": "bangyu"
+}

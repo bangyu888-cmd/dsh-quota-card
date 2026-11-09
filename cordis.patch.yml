@@ -1,0 +1,7 @@
+# dsh-quota-card bundle patch: quota / balance card above the sidebar account row.
+# P0 inserts one host row with an empty config; P1 adds the Config schema
+# (refresh, cache, provider toggles, proxy, thresholds) on the same id.
+- insert:
+    - id: quota-card
+      name: dsh-quota-card
+      config: {}

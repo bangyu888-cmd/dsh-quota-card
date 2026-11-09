@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Quota card",
+    "description": "Shows ChatGPT, Gemini and Grok Bot usage plus the DeepSeek balance in a compact card above the sidebar account row."
+  }
+}

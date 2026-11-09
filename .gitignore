@@ -1,0 +1,4 @@
+*.tgz
+icon-v1.svg
+.DS_Store
+node_modules/
