@@ -1,5 +1,7 @@
 # 额度卡片 · dsh-quota-card
 
+![额度卡片在 DeepSeek Harness 侧栏中的显示效果](screenshots/quota-card.png)
+
 在 DeepSeek Harness 侧栏底部、登录名上方显示四个服务的额度与余额：
 
 | Provider | 展示内容 | 数据来源 | 需要 |
